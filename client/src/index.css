@@ -1,0 +1,173 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: Montserrat ;
+     
+}
+
+.navbar {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-size: 17px;
+     line-height: 26px;
+     text-transform: uppercase;
+      box-shadow: 0 0px 6px -6px gray;
+     -webkit-box-shadow: 0 0px 6px -6px gray;
+     border-bottom: 0.6px solid gray !important;
+
+}
+
+.nav-link{
+    
+    font-weight: 300 !important;
+
+}
+
+.active {
+     border-bottom: 2px solid white;
+}
+
+.navbar-brand {
+     font-weight: 700;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     letter-spacing: 3px;
+}
+
+.footer{
+    color: white;
+    padding: 16px;
+}
+
+.footer a {
+     text-decoration: none;
+     color: white;
+     padding: 10px;
+}
+
+.footer a:hover{
+    color : #ffefba;
+    border-bottom: 1px solid #ffefba ;
+}
+
+.pnf {
+    display: flex;
+    min-height: 65vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .pnf-title {
+    font-size: 100px;
+    font-weight: 700;
+  }
+  
+  .pnf-heading {
+    font-weight: normal;
+  }
+  
+  .pnf-btn {
+    color: black;
+    border: 1px solid black;
+    text-decoration: none;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  .pnf-btn:hover {
+    background-color: black;
+    color: white;
+  }
+
+  .contactus {
+    margin: 0;
+    padding: 0;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+  }
+
+/* Default style for all screen sizes */
+.images {
+    height: 500px;
+  }
+  
+  /* Media query for screens smaller than 768px (typical tablets) */
+  @media (max-width: 767.98px) {
+    .images {
+      height: 280px; /* Adjust the height as needed for smaller screens */
+     padding-left: 100px ; 
+    }
+  }
+  
+  .register {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 70vh;
+     flex-direction: column;
+  }
+
+  .product-link{
+    text-decoration: none;
+    color: black !important;
+    
+  }
+
+  .dropdownmenu &:hover {
+      color: black !important;
+  }
+
+  .filter-section {
+    padding: 15px;
+    height: 266px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 10px 2px black; 
+    border-radius: 10px;
+
+  } 
+
+    @media (max-width: 750px) {
+      .filter-section {
+        height: 300px;  
+        font-weight: 500;
+        font-size: small;
+        margin-bottom: 12px;
+        margin-left: 12px;
+        z-index: 12;
+      }
+
+  }
+
+  @media (max-width: 750px) {
+   .hero{
+   margin-left: 19px;      
+     }  
+    .hero  button {
+       height: 27px;
+       font-size: 10px;
+  
+    } 
+      .thisimage {
+      height: 100px !important;
+    }
+    
+  }
+  
+  
+  /* Additional styling for checkboxes and radio buttons */
+  .filter-section input[type="checkbox"],
+  .filter-section input[type="radio"] {
+    margin-right: 5px; /* Adjust the spacing between checkbox/radio and text */
+
+  }
+  
+  .boxing {
+     line-height: 6px;
+     letter-spacing: 1px;
+     
+  }
+
+  .boxinging {
+    border: 1px solid black;
+  }
