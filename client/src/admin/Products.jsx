@@ -12,6 +12,8 @@ const Products = () => {
     try {
       const { data } = await axios.get("https://ecommerce-e3o2.onrender.com/api/v1/product/get-product");
       setProducts(data.products);
+      console.log(data.products);
+  
     } catch (error) {
       console.log(error);
       alert("Something Went Wrong");

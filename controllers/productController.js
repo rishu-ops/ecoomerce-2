@@ -51,6 +51,7 @@ export const createProductController = async (req, res) => {
       message: "Product Created Successfully",
       products,
     });
+    
   } catch (error) {
     console.log(error);
     res.status(500).send({
@@ -68,7 +69,6 @@ export const getProductController = async (req, res) => {
       .find({})
       .populate("category")
       .select("-photo")
-      .limit(12)
       .sort({ createdAt: -1 });
     res.status(200).send({
       success: true,
