@@ -45,7 +45,7 @@ const Cartpage = () => {
 
   const getToken = async () => {
     try {
-      const { data } = await axios.get('/api/v1/product/braintree/token');
+      const { data } = await axios.get('https://ecommerce-e3o2.onrender.com/api/v1/product/braintree/token');
       setClientToken(data?.clientToken);
     } catch (error) {
       console.log(error);
@@ -60,7 +60,7 @@ const Cartpage = () => {
     try {
       setLoading(true);
       const { nonce } = await instance.requestPaymentMethod();
-      const { data } = await axios.post('/api/v1/product/braintree/payment', {
+      const { data } = await axios.post('https://ecommerce-e3o2.onrender.com/api/v1/product/braintree/payment', {
         nonce,
         cart,
       });
@@ -102,7 +102,7 @@ const Cartpage = () => {
               <div className="row mb-2 card flex-row" key={product._id}>
                 <div className="col-md-4">
                   <img
-                    src={`/api/v1/product/product-photo/${product._id}`}
+                    src={`https://ecommerce-e3o2.onrender.com/api/v1/product/product-photo/${product._id}`}
                     className="card-img-top"
                     alt={product.name}
                   

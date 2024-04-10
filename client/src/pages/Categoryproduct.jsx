@@ -18,7 +18,7 @@ const Categoryproduct = () => {
   const getProductsByCat = async () => {
     try {
       const { data } = await axios.get(
-        `/api/v1/product/product-category/${params.slug}`
+        `https://ecommerce-e3o2.onrender.com/api/v1/product/product-category/${params.slug}`
       );
 
       console.log('API Response:', data);
@@ -47,7 +47,7 @@ const Categoryproduct = () => {
                 }}
               >
                 <img
-                  src={`/api/v1/product/product-photo/${p._id}`}
+                  src={`https://ecommerce-e3o2.onrender.com/api/v1/product/product-photo/${p._id}`}
                   className="card-img-top"
                   alt={p.name}
                   style={{ height: '200px', objectFit: 'contain' }}

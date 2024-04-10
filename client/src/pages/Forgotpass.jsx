@@ -17,7 +17,7 @@ const Forgotpass = () => {
     const handleSubmit = async (e) => {
       e.preventDefault();
       try {
-        const res = await axios.post("/api/vl/auth/forget-password", {
+        const res = await axios.post("https://ecommerce-e3o2.onrender.com/api/vl/auth/forget-password", {
           email,
           newpassword ,
           question

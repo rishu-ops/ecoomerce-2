@@ -40,7 +40,7 @@ const Products = () => {
               >
                 <div className="card m-2 product-card" style={{ width: "18rem" }}>
                   <img
-                    src={`/api/v1/product/product-photo/${p._id}`}
+                    src={`https://ecommerce-e3o2.onrender.com/api/v1/product/product-photo/${p._id}`}
                     className="card-img-top"
                     alt={p.name}
                   />

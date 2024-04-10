@@ -15,7 +15,7 @@ const ProductDetails = () => {
 
   const getProduct = async () => {
     try {
-      const { data } = await axios.get(`/api/v1/product/get-product/${params.slug}`);
+      const { data } = await axios.get(`https://ecommerce-e3o2.onrender.com/api/v1/product/get-product/${params.slug}`);
       setProduct(data?.product);
       getSimilarProducts(data?.product._id, data?.product.category._id);
     } catch (error) {
@@ -25,7 +25,7 @@ const ProductDetails = () => {
 
   const getSimilarProducts = async (pid, cid) => {
     try {
-      const { data } = await axios.get(`/api/v1/product/realted-product/${pid}/${cid}`);
+      const { data } = await axios.get(`https://ecommerce-e3o2.onrender.com/api/v1/product/realted-product/${pid}/${cid}`);
       setRelatedProduct(data?.products || []);
     } catch (error) {
       console.error('Error fetching related products:', error);
@@ -37,7 +37,7 @@ const ProductDetails = () => {
       <div className="row container mt-2 " >
       <div className="col-md-6 card-shadow">
   <img
-    src={`/api/v1/product/product-photo/${product._id}`}
+    src={`https://ecommerce-e3o2.onrender.com/api/v1/product/product-photo/${product._id}`}
     className="card-img-top"
     alt={product.name}
     height="300px"
@@ -72,7 +72,7 @@ const ProductDetails = () => {
           {relatedProduct.map((p) => (
             <div className="card  card shadow m-2" style={{ width: "18rem" }} key={p._id}>
               <img
-                src={`/api/v1/product/product-photo/${p._id}`}
+                src={`https://ecommerce-e3o2.onrender.com/api/v1/product/product-photo/${p._id}`}
                 className="card-img-top"
                 style={{height : "120px" , objectFit : "contain"}}
                 alt={p.name}

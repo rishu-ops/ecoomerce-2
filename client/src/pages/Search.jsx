@@ -25,7 +25,7 @@ const Search = () => {
               <div className="col mb-3" key={p._id}>
                 <div className="card">
                   <img
-                    src={`/api/v1/product/product-photo/${p._id}`}
+                    src={`https://ecommerce-e3o2.onrender.com/api/v1/product/product-photo/${p._id}`}
                     className="card-img-top custom-img"
                     style={{height : "170px" , objectFit : "contain"}}
                     alt={p.name}
