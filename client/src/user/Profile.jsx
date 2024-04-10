@@ -24,7 +24,7 @@ const Profile = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const {data} = await axios.put("/api/vl/auth/profile",{
+      const {data} = await axios.put("https://ecommerce-e3o2.onrender.com/api/vl/auth/profile",{
           name , email , password , phone , address 
       });
       if(data?.error) {
